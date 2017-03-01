@@ -14,7 +14,7 @@
 (setq visible-bell t)
 (column-number-mode 1)
 (show-paren-mode 1)
-(pc-selection-mode)
+;;(pc-selection-mode)
 (setq-default indent-tabs-mode nil)
 (setq-default truncate-lines t)
 ;; C-RET ile kelime tamamlamayý aktif hale getiriyoruz.
@@ -52,8 +52,8 @@
       (set-cursor-color "Orchid")
       (set-foreground-color "Wheat")
       (set-background-color "DarkSlateGray")
-      (set-face-foreground 'modeline "black") 
-      (set-face-background 'modeline "gray")
+;;      (set-face-foreground 'modeline "black") 
+;;      (set-face-background 'modeline "gray")
       (set-face-background 'region "#224422")
       (set-default-font "terminus-13")
 ;;      (set-default-font "monaco-10")
@@ -463,7 +463,7 @@
 
 (add-to-list 'load-path
              "~/.emacs.d/plugins/yasnippet-0.6.1c")
-(require 'yasnippet) ;; not yasnippet-bundle
+(require 'yasnippet "~/.emacs.d/plugins/yasnippet-0.6.1c/yasnippet.el") ;; not yasnippet-bundle
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1c/snippets")
 
